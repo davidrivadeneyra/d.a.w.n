@@ -4,104 +4,92 @@
 
 :root {
     --color-primary: #1a73e8;
-    --main-background: radial-gradient(219.45% 100% at 50% 0%, #010206 0%, #010206 68.5%, #1D026E 75%, #8400FF 84.02%, #C19DFE 90.88%, #D3D0FD 94.38%, #DDEBFD 100%);
     --color-01: #E7E4DE;
     --color-description: #9DA1AC;
     --button: #6D2FFF;
+    --dark-900: #0B0416
   }
   
 
 @layer components {
 
     body {
-        background-color: #E1EEFE; 
+        background-color: var(--dark-900); 
     }
+
+    p, input, label, span, a, button {
+        font-family: "Rubik";
+        font-weight: 400;
+    }
+
+    .vh-85 {
+        height: 85vh;
+    }
+
+    .without-ring:focus {
+        outline: none;
+        border: none;
+        box-shadow: none;
+      }
 
     .button-color {
         background-color: var(--button);
     }
 
     .main {
-        background-color: #E1EEFE; 
-        overflow: hidden;
+        /* background-image: url("/public/banner/red-radial.svg"); */
+        background: radial-gradient(108.67% 100% at 50% 0%, rgba(11, 4, 22, 0.00) 0%, #0B0416 79.03%, #1B0717 81.87%, #450D19 91.18%, #62121B 95.13%, #73141C 100%);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     .main-background {
-        background: var(--main-background);
         color: var(--color-01);
         position: relative;
+        padding-bottom: 128px;
     }
 
     .color-descripcion {
         color: var(--color-description);
     }
 
-    .slider-container {
-        position: relative;
-        /* overflow: hidden; */
-        display: flex;
-        white-space: nowrap;
-        gap: 32px;
-        width: max-content;
-    }
-      
-      .slider {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        white-space: nowrap;
-        gap: 32px;
-    }
-
-      .slider-container .slider:nth-of-type(2) {
-        position: absolute;
-        left: 100%;
-        margin-left: 32px;
-    }
-      
-      .slider-img-control {
-        width: auto; 
-        object-fit: contain;
-        border-radius: 8px;
-    }
-
     .title {
-        font-family: "Silka";
-        font-weight: 500;
+        font-family: "Anton SC";
+        font-weight: 400;
     }
     .button {
-        font-family: "Silka";
+        font-family: "Rubik";
         font-weight: 600;
     }
     .paragraph {
-        font-family: "Silka";
+        font-family: "Rubik";
         font-weight: 400;
     }
     
+    .button {
+        font-family: "Rubik";
+        font-weight: 600;
+    }
 
     .main-inner {
         margin: 0 auto;
         max-width: 1320px;
     }
 
-    .title-bigger {
-        @apply title text-[40px] md:text-[80px] tracking-tighter leading-[100%]
+    .title-h1 {
+        @apply title text-[56px] md:text-[138px] leading-[95%] uppercase
     }
 
-    .title-big {
-        @apply title text-[32px] md:text-[72px] tracking-tighter leading-[100%]
+    .title-h2 {
+        @apply title text-[40px] md:text-[105px] leading-[95%]
+    }
+s
+    .title-h3 {
+        @apply title text-[21px] md:text-[95px] leading-[95%]
     }
 
-    .title-regular {
-        @apply title text-[24px] md:text-[56px] tracking-tighter leading-[100%]
-    }
-
-    .title-small {
-        @apply title text-[16px] md:text-[32px] tracking-tighter leading-[100%]
-    }
-
-    .title-uppercase {
-        @apply title text-[10px] md:text-[12px] tracking-widest leading-[100%] uppercase
+    .title-h4 {
+        @apply title text-[14px] md:text-[27px] leading-[95%]
     }
 
     .btn {
@@ -119,6 +107,7 @@
     .slider-img {
         @apply slider-img-control h-[400px] lg:h-[600px]
     }
+      
   }
 
   

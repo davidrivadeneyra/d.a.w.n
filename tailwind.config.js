@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-				'sans': ['Silka', 'system-ui']
+				'sans': ['Anton SC', 'system-ui'],
+        'descrip': ['Rubik', 'system-ui'],
 			}
     },
   },
