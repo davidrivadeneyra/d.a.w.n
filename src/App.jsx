@@ -24,7 +24,7 @@ function App() {
 			</header>
 			<section className="main-inner-section">
 				<div className='lg:w-[530px] '>
-					<h1 className="title-h1 pb-3 lg:pb-8 pt-24"><span className='title-h2'>Survive the</span>  Darkness</h1>
+					<h1 className="title-h1 pb-3 lg:pb-8 pt-24"><span className='title-h2 block'>Survive the</span>  Darkness</h1>
 					<p className="descriptions pb-8 color-descripcion">D.A.W.N: Darkness Awaits Withstand the Night is a fast-paced survival game where players face off against a relentless, evolving threat of zombies and reanimated former teammates in an open-ended simulation.</p>
 					<h2 className='title-h4 pb-6'>Be the First to Know!</h2>
 
