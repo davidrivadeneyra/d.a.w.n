@@ -28,7 +28,7 @@ function App() {
 					<p className="descriptions pb-8 color-descripcion">D.A.W.N: Darkness Awaits Withstand the Night is a fast-paced survival game where players face off against a relentless, evolving threat of zombies and reanimated former teammates in an open-ended simulation.</p>
 					<h2 className='title-h4 pb-6'>Be the First to Know!</h2>
 
-					<form className='flex gap-4 mb-4'>
+					<form className='flex flex-col lg:flex-row gap-4 mb-4'>
 						<div className="relative h-16 w-64 rounded-lg bg-white/[0.08] hover:bg-white/[0.1] border border-white/10  flex flex-col px-4 py-[10px] gap-1 cursor-pointer">
 							<label className='text-[#EDF67D] left-4 top-[10px] text-sm'>Your email *</label>
 							<input className='bg-transparent text-sm w-full without-ring' type="email" placeholder="zombie@mail.com" />
