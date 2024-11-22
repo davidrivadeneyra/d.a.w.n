@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import NewsLetterForm from './components/NewsLetterForm'
 
 function App() {
   return (
@@ -19,13 +20,14 @@ function App() {
 	<main className="main main-background">
 		  	<header className='h-28 flex justify-center items-center w-full'>
 				<a href="#" className='flex justify-center items-center'>
-					<img className='inline-block h-[22px]' src="/brand/logo.svg" alt="Logo D.A.W.N" />
+					<img className='inline-block h-4 md:h-[22px]' src="/brand/logo.svg" alt="Logo D.A.W.N" />
 				</a>
 			</header>
 			<section className="main-inner-section pb-32">
 				<div className='lg:w-[530px] '>
 					<h1 className="title-h1 title-color pb-3 lg:pb-8 pt-44"><span className='title-h2 block '>Survive the</span>  Darkness</h1>
 					<p className="paragraph-primary paragraph-color pb-8">D.A.W.N: Darkness Awaits Withstand the Night is a fast-paced survival game where players face off against a relentless, evolving threat of zombies and reanimated former teammates in an open-ended simulation.</p>
+					{/* <NewsLetterForm></NewsLetterForm> */}
 					<h2 className='title-h4 title-color pb-4'>Be the First to Know!</h2>
 
 					<form className='flex flex-col lg:flex-row gap-4 mb-4'>
@@ -39,7 +41,7 @@ function App() {
 					</form>
 
 					<div className="wishlist-info flex lg:flex gap-2 ">
-						<a href="#" className='flex gap-2 items-center'>
+						<a target='_black'  href="https://store.steampowered.com/agecheck/app/1938500/" className='flex gap-2 items-center'>
 							<img src="/brand/steam-logo.svg" alt="Steam icon" className="steam-icon"/>
 							<span className='button-font text-xs lg:text-sm  text-[#EDF67D]'>WISHLIST ON STEAM</span>
 						</a>
@@ -54,7 +56,7 @@ function App() {
 	<div className="main-background">
 		<div className='w-full section-gradiente-top'>
 			<section className="main-inner-section pb-40">
-					<h1 className="title-h2 title-color pt-24 pb-20 text-center">Roadmap</h1>
+					<h1 className="title-h2 title-color pt-24 pb-20 text-center uppercase">D.A.W.N Roadmap</h1>
 					<h3 className='title-h4 paragraph-orange-500 pb-2'>Stage 1:</h3>
 					
 					<h2 className='title-h3 title-color pb-8 md:pb-16'>Foundations of Survival</h2>
@@ -157,7 +159,7 @@ function App() {
 					</form>
 
 					<div className="wishlist-info flex lg:flex gap-2 ">
-						<a href="#" className='flex gap-2 items-center'>
+						<a target='_black' href="https://store.steampowered.com/agecheck/app/1938500/" className='flex gap-2 items-center'>
 							<img src="/brand/steam-logo.svg" alt="Steam icon" className="steam-icon"/>
 							<span className='button-font text-xs lg:text-sm  text-[#EDF67D]'>WISHLIST ON STEAM</span>
 						</a>
@@ -313,7 +315,7 @@ function App() {
 						</form>
 
 						<div className="wishlist-info flex lg:flex gap-2 ">
-							<a href="#" className='flex gap-2 items-center'>
+							<a target='_black' href="https://store.steampowered.com/agecheck/app/1938500/" className='flex gap-2 items-center'>
 								<img src="/brand/steam-logo.svg" alt="Steam icon" className="steam-icon"/>
 								<span className='button-font text-xs lg:text-sm  text-[#EDF67D]'>WISHLIST ON STEAM</span>
 							</a>
@@ -324,9 +326,9 @@ function App() {
 					<div>
 						<p className='paragraph-color text-center pt-32 pb-4'>© 2024 Half Byte Games LLC. All Rights Reserved.</p>
 						<div className='flex gap-8 justify-center paragraph-yellow-500'>
-							<a href="/" className='transition ease-in-out delay-150 hover:scale-110 hover:color-[#F6FF89] duration-300' >X</a>
-							<a href="/" className='transition ease-in-out delay-150 hover:scale-110 hover:color-[#F6FF89] duration-300' >Discord</a>
-							<a href="/" className='transition ease-in-out delay-150 hover:scale-110 hover:color-[#F6FF89] duration-300' >YouTube</a>
+							<a target='_black' href="https://x.com/DawnOfficialHQ" className='transition ease-in-out delay-150 hover:scale-110 hover:color-[#F6FF89] duration-300' >X</a>
+							<a target='_black' href="https://discord.com/invite/F6f7J357uX" className='transition ease-in-out delay-150 hover:scale-110 hover:color-[#F6FF89] duration-300' >Discord</a>
+							<a target='_black' href="https://www.youtube.com/@halfbytegamesllc5419" className='transition ease-in-out delay-150 hover:scale-110 hover:color-[#F6FF89] duration-300' >YouTube</a>
 						</div>
 					</div>
 				</section>

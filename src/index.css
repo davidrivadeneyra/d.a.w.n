@@ -135,7 +135,7 @@
     }
 
     .title-h3 {
-        @apply title-font text-[24px] md:text-[47px] leading-[95%] 
+        @apply title-font text-[32px] md:text-[47px] leading-[95%] 
     }
 
     .title-h4 {
