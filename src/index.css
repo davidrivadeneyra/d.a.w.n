@@ -50,6 +50,9 @@
     .section-gradiente-top {
         background: linear-gradient(0deg, rgba(11, 4, 22, 0.00) 0%, #450D19 54%, #73141C 100%);
     }
+    .section-gradiente-bottom {
+        background: linear-gradient(180deg, rgba(11, 4, 22, 0.00) 0%, #450D19 54%, #73141C 100%);
+    }
 
     .main-background {
         position: relative;
@@ -86,6 +89,12 @@
     .paragraph-orange-200 {
         color: var(--orange-200);
     }
+
+    .paragraph-yellow-500 {
+        color: var(--yello-500);
+    } 
+
+    
 
     .button-font {
         font-family: "Rubik";
