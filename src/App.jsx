@@ -287,8 +287,8 @@ function App() {
 								</div>
 							</div>
 							<div className='path-image col-span-9 relative visible'>
-								<img src="/assets/img/05.jpg"  className='aspect-ratio-img absolute blur-2xl top-0 w-full z-0' alt="" />
-								<img src="/assets/img/05.jpg" className='aspect-ratio-img relative rounded-3xl' alt="" />
+								<img src="/assets/img/06.jpg"  className='aspect-ratio-img absolute blur-2xl top-0 w-full z-0' alt="" />
+								<img src="/assets/img/06.jpg" className='aspect-ratio-img relative rounded-3xl' alt="" />
 							</div>
 						</div>
 					</div>
