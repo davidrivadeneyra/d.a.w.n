@@ -4,7 +4,7 @@
 
 :root {
     --dark-100: #FFFEF5;
-    --dark-500: #9DA1AC;
+    --dark-500: #CBCAC8;
     --dark-900: #0B0416;
     --yello-500: #EDF67D;    
   }
@@ -14,9 +14,14 @@
         background-color: var(--dark-900); 
     }
 
-    p, input, label, span, a, button {
+    p, input, label, span {
         font-family: "Rubik";
         font-weight: 400;
+    }
+   
+    a, button {
+        font-family: "Rubik";
+        font-weight: 500;
     }
 
     .vh-85 {
@@ -56,7 +61,7 @@
 
     .paragraph-font-medium {
         font-family: "Rubik";
-        font-weight: 600;
+        font-weight: 500;
     }
 
     .title-color {
@@ -78,12 +83,17 @@
 
     .button-font {
         font-family: "Rubik";
-        font-weight: 600;
+        font-weight: 500;
     }
 
     .main-inner {
         margin: 0 auto;
         max-width: 1320px;
+    }
+
+    .aspect-ratio-img {
+        aspect-ratio: 4/3;
+        object-fit: cover;
     }
 }
   
@@ -101,7 +111,7 @@
     }
 
     .title-h4 {
-        @apply title-font text-[14px] md:text-[27px] leading-[95%] title-color
+        @apply title-font text-[14px] md:text-[27px] leading-[120%] title-color
     }
 
     .btn {
@@ -109,11 +119,11 @@
     }
 
     .paragraph-primary {
-        @apply paragraph-font paragraph-color text-xs md:text-sm leading-[170%] 
+        @apply paragraph-font paragraph-color text-xs md:text-sm leading-[170%] md:leading-[170%]
     }
     
     .paragraph-secondary {
-        @apply paragraph-font paragraph-color text-sm md:text-base leading-[170%] text-stone-200
+        @apply paragraph-font paragraph-color text-sm md:text-base leading-[170%] md:leading-[170%] text-stone-200
     }
 
     .main-inner-section {

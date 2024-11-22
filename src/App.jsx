@@ -54,20 +54,38 @@ function App() {
 	<main className="section-gradiente-top main-background">
 			<section className="main-inner-section">
 				<div className=''>
-					<h1 className="title-h2 pt-24 pb-20">D.A.W.N Roadmap</h1>
+					<h1 className="title-h2 pt-24 pb-20 text-center">Roadmap</h1>
 					<h3 className='title-h4 text-[#FAA275] pb-2'>Stage 1</h3>
-					<h2 className='title-h3 pb-8'>Foundations of Survival</h2>
-					<div className='path-section'>
-						<div className='path-list'>
+					<span className='uppercase title-color paragraph-font pb-8 block'>Release Date: October 11, 2024</span>
+					<h2 className='title-h3 pb-16'>Foundations of Survival</h2>
+					
+					<div className='path-section flex flex-col-reverse md:grid md:grid-cols-12 gap-16'>
+						<div className='path-list flex flex-col gap-10 col-span-3'>
 							<div className='path-item'>
 								<span className='uppercase text-[#FAA275] paragraph-font-medium pb-2'>Patch 1.0</span>
 								<h3 className='title-h4 pb-4'>First Blood</h3>
-								<p className="paragraph-primary pb-8">Initial release, core zombie AI (Wretches), and basic player movement/combat.</p>
+								<p className="paragraph-primary">Initial release, core zombie AI (Wretches), and basic player movement/combat.</p>
 							</div>
-							
+							<div className='path-item'>
+								<span className='uppercase text-[#FAA275] paragraph-font-medium pb-2'>Patch 1.1</span>
+								<h3 className='title-h4 pb-4'>Adapt or Die</h3>
+								<p className="paragraph-primary">Improved zombie AI, pathfinding, and player inventory system.</p>
+							</div>
+							<div className='path-item'>
+								<span className='uppercase text-[#FAA275] paragraph-font-medium pb-2'>Patch 1.2</span>
+								<h3 className='title-h4 pb-4'>Breaking Point</h3>
+								<p className="paragraph-primary">Zombie variants (fast and tough Wretches) and ranged weapons for players.</p>
+							</div>
+							<div className='path-item'>
+								<span className='uppercase text-[#FAA275] paragraph-font-medium pb-2'>Patch 1.3</span>
+								<h3 className='title-h4 pb-4'>Defensive Measures</h3>
+								<p className="paragraph-primary">Player traps, simple crafting, and early progression mechanics.</p>
+							</div>
 						</div>
-						<div className='path-image'>
-							<img src="/assets/img/02.jpg" alt="" />
+						<div className='path-image col-span-9 relative visible'>
+
+							<img src="/assets/img/02.jpg"  className='aspect-ratio-img absolute blur-2xl top-0 w-full z-0' alt="" />
+							<img src="/assets/img/02.jpg" className='aspect-ratio-img relative rounded-3xl' alt="" />
 						</div>
 						
 
