@@ -94,9 +94,7 @@ function App() {
 
 			</section>
 		</div>
-			
-
-			{/* PATH 2 */}
+		{/* PATH 2 */}
 		<div className='w-full section-gradiente-bottom'>
 			<section className="main-inner-section pb-40">
 				<div className=''>
@@ -139,13 +137,14 @@ function App() {
 				</div>
 			</section>
 		</div>
+		{/* CTA */}
 		<div className='py-40 section-image'>
 			<section className="main-inner-section pt-40">
 				<div className=''>
 				<div className='lg:w-[530px] '>
 					<h1 className="title-h2 title-color pb-3 lg:pb-8 pt-24">Be the First to Know!</h1>
 
-					<h2 className='title-h4 title-color pb-4'>Be the First to Know!</h2>
+					<h2 className='title-h4 title-color pb-4'>Get early access now!</h2>
 
 					<form className='flex flex-col lg:flex-row gap-4 mb-4'>
 						<div className="relative h-12 lg:h-14 w-full md:w-64 rounded-lg bg-white/[0.08] hover:bg-white/[0.1] border border-white/10  flex flex-col px-4 py-2 gap-1 cursor-pointer">
@@ -171,8 +170,93 @@ function App() {
 				</div>
 			</section>
 		</div>
-		
-		
+		{/* PATH 3 */}
+		<div className='w-full section-gradiente-top'>
+			<section className="main-inner-section py-40">
+				<div className=''>
+					<h3 className='title-h4 paragraph-orange-500 pb-2'>Stage 3:</h3>
+					
+					<h2 className='title-h3 title-color pb-8 md:pb-16'>Ravagers of the Wastes</h2>
+					
+					<div className='path-section flex flex-col-reverse md:grid md:grid-cols-12 gap-8 md:gap-16'>
+						<div className='path-list flex flex-col gap-10 col-span-3'>
+							<div className='path-item'>
+								<span className='uppercase paragraph-orange-500 paragraph-medium pb-2'>Patch 3.0</span>
+								<h3 className='title-h4 title-color pb-4'>Ravager’s Wrath</h3>
+								<span className='paragraph-medium title-color block'>Release Date: January 31, 2025</span>
+								<p className="paragraph-primary paragraph-color ">Ravagers emerge with the ability to break through defenses and remember player action.</p>
+							</div>
+							<div className='path-item'>
+								<span className='uppercase paragraph-orange-500 paragraph-medium pb-2'>Patch 3.1</span>
+								<h3 className='title-h4 title-color pb-4'>Hold the Line</h3>
+								<span className='paragraph-medium title-color block'>Release Date: February 14, 2025</span>
+								<p className="paragraph-primary paragraph-color ">Player base defenses and advanced traps for dealing with Ravagers.</p>
+							</div>
+							<div className='path-item'>
+								<span className='uppercase paragraph-orange-500 paragraph-medium pb-2'>Patch 3.2</span>
+								<h3 className='title-h4 title-color pb-4'>Memories of the Dead</h3>
+								<span className='paragraph-medium title-color block'>Release Date: February 28, 2025</span>
+								<p className="paragraph-primary paragraph-color ">Tactical memory-based AI for Ravagers, allowing them to set ambushes.</p>
+							</div>
+							<div className='path-item'>
+								<span className='uppercase paragraph-orange-500 paragraph-medium pb-2'>Patch 3.3</span>
+								<h3 className='title-h4 title-color pb-4'>Resourceful Resistance</h3>
+								<span className='paragraph-medium title-color block'>Release Date: March 14, 2025</span>
+								<p className="paragraph-primary paragraph-color ">Advanced resource gathering and more complex traps for players.</p>
+							</div>
+						</div>
+						<div className='path-image col-span-9 relative visible'>
+							<img src="/assets/img/03.jpg"  className='aspect-ratio-img absolute blur-2xl top-0 w-full z-0' alt="" />
+							<img src="/assets/img/03.jpg" className='aspect-ratio-img relative rounded-3xl' alt="" />
+						</div>
+					</div>
+				</div>
+			</section>
+			
+		</div>
+		{/* PATH 4 */}
+		<div className='w-full section-gradiente-bottom'>
+				<section className="main-inner-section pb-40">
+					<div className=''>
+						<h3 className='title-h4 paragraph-orange-500 pb-2'>Stage 4:</h3>
+						
+						<h2 className='title-h3 title-color pb-8 md:pb-16'>Lords of the Horde</h2>
+						
+						<div className='path-section flex flex-col-reverse md:grid md:grid-cols-12 gap-8 md:gap-16'>
+							<div className='path-list flex flex-col gap-10 col-span-3'>
+								<div className='path-item'>
+									<span className='uppercase paragraph-orange-500 paragraph-medium pb-2'>Patch 4.0</span>
+									<h3 className='title-h4 title-color pb-4'>Alpha Ascendant</h3>
+									<span className='paragraph-medium title-color block'>Release Date: March 28, 2025</span>
+									<p className="paragraph-primary paragraph-color ">ntroduction of Alphas as horde leaders, boosting other zombies’ abilities.</p>
+								</div>
+								<div className='path-item'>
+									<span className='uppercase paragraph-orange-500 paragraph-medium pb-2'>Patch 4.1</span>
+									<h3 className='title-h4 title-color pb-4'>March of the Juggernauts</h3>
+									<span className='paragraph-medium title-color block'>Release Date: April 11, 2025</span>
+									<p className="paragraph-primary paragraph-color ">Juggernauts emerge, leading massive hordes and breaking through defenses.</p>
+								</div>
+								<div className='path-item'>
+									<span className='uppercase paragraph-orange-500 paragraph-medium pb-2'>Patch 4.2</span>
+									<h3 className='title-h4 title-color pb-4'>The Reanimated Rise</h3>
+									<span className='paragraph-medium title-color block'>Release Date: April 25, 2025</span>
+									<p className="paragraph-primary paragraph-color ">Reanimation system, where fallen zombies return with enhanced abilities.</p>
+								</div>
+								<div className='path-item'>
+									<span className='uppercase paragraph-orange-500 paragraph-medium pb-2'>Patch 2.3</span>
+									<h3 className='title-h4 title-color pb-4'>Follow the Leader</h3>
+									<span className='paragraph-medium title-color block'>Release Date: May 9, 2025</span>
+									<p className="paragraph-primary paragraph-color ">Leadership boosts for reanimated zombies when near Alphas or Juggernauts.</p>
+								</div>
+							</div>
+							<div className='path-image col-span-9 relative visible'>
+								<img src="/assets/img/05.jpg"  className='aspect-ratio-img absolute blur-2xl top-0 w-full z-0' alt="" />
+								<img src="/assets/img/05.jpg" className='aspect-ratio-img relative rounded-3xl' alt="" />
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
 	</main>
 	
 
