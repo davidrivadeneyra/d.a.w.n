@@ -6,7 +6,9 @@
     --dark-100: #FFFEF5;
     --dark-500: #CBCAC8;
     --dark-900: #0B0416;
-    --yello-500: #EDF67D;    
+    --yello-500: #EDF67D;
+    --orange-200: #FFD3BD;
+    --orange-500: #FAA275;
   }
 
 @layer base {
@@ -77,8 +79,12 @@
         color: var(--dark-500);
     }
 
-    .paragraph-color {
-        color: var(--dark-500);
+    .paragraph-orange-500 {
+        color: var(--orange-500);
+    }
+    
+    .paragraph-orange-200 {
+        color: var(--orange-200);
     }
 
     .button-font {
@@ -99,19 +105,19 @@
   
 @layer components {
     .title-h1 {
-        @apply title-font text-[56px] md:text-[138px] leading-[95%] uppercase title-color
+        @apply title-font text-[64px] md:text-[138px] leading-[95%] uppercase 
     }
 
     .title-h2 {
-        @apply title-font text-[40px] md:text-[105px] leading-[95%] title-color
+        @apply title-font text-[48px] md:text-[105px] leading-[95%] 
     }
 
     .title-h3 {
-        @apply title-font text-[21px] md:text-[47px] leading-[95%] title-color
+        @apply title-font text-[24px] md:text-[47px] leading-[95%] 
     }
 
     .title-h4 {
-        @apply title-font text-[14px] md:text-[27px] leading-[120%] title-color
+        @apply title-font text-[21px] md:text-[27px] leading-[120%] 
     }
 
     .btn {
@@ -119,11 +125,15 @@
     }
 
     .paragraph-primary {
-        @apply paragraph-font paragraph-color text-xs md:text-sm leading-[170%] md:leading-[170%]
+        @apply paragraph-font text-xs md:text-sm leading-[170%] md:leading-[170%]
     }
     
     .paragraph-secondary {
-        @apply paragraph-font paragraph-color text-sm md:text-base leading-[170%] md:leading-[170%] text-stone-200
+        @apply paragraph-font paragraph-color text-xs md:text-sm leading-[170%] md:leading-[170%] text-stone-200
+    }
+
+    .paragraph-medium {
+        @apply button-font text-xs md:text-sm leading-[170%] md:leading-[170%]
     }
 
     .main-inner-section {
