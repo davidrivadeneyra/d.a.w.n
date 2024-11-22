@@ -29,9 +29,9 @@ function App() {
 					<h2 className='title-h4 pb-6'>Be the First to Know!</h2>
 
 					<form className='flex flex-col lg:flex-row gap-4 mb-4'>
-						<div className="relative h-12 lg:h-14 w-full md:w-64 rounded-lg bg-white/[0.08] hover:bg-white/[0.1] border border-white/10  flex flex-col px-4 py-2 lg:py-[10px] gap-2 cursor-pointer">
+						<div className="relative h-12 lg:h-14 w-full md:w-64 rounded-lg bg-white/[0.08] hover:bg-white/[0.1] border border-white/10  flex flex-col px-4 py-2 gap-1 cursor-pointer">
 							<label className='text-[#EDF67D] left-4 top-[10px] text-xs lg:text-sm leading-none'>Your email*</label>
-							<input className='bg-transparent text-xs lg:text-sm w-full without-ring leading-none' type="email" placeholder="zombie@mail.com" />
+							<input className='bg-transparent text-xs lg:text-sm w-full without-ring leading-none text-stone-200' type="email" placeholder="zombie@mail.com" />
 						</div>
 						<div className="form-group">
 							<button type="submit" className="btn">Join the Fight!</button>
@@ -51,12 +51,39 @@ function App() {
 
 		
 	</main>
-	<div className='h-60'></div>
-		<div className='h-60'></div>
-		<div className='h-60'></div>
-		<div className='h-60'></div>
-		<div className='h-60'></div>
-		<div className='h-60'></div>
+	<main className="section-gradiente-top main-background">
+			<section className="main-inner-section">
+				<div className=''>
+					<h1 className="title-h2 pt-24 pb-20">D.A.W.N Roadmap</h1>
+					<h3 className='title-h4 text-[#FAA275] pb-2'>Stage 1</h3>
+					<h2 className='title-h3 pb-8'>Foundations of Survival</h2>
+					<div className='path-section'>
+						<div className='path-list'>
+							<div className='path-item'>
+								<span className='uppercase text-[#FAA275] paragraph-font-medium pb-2'>Patch 1.0</span>
+								<h3 className='title-h4 pb-4'>First Blood</h3>
+								<p className="paragraph-primary pb-8">Initial release, core zombie AI (Wretches), and basic player movement/combat.</p>
+							</div>
+							
+						</div>
+						<div className='path-image'>
+							<img src="/src/assets/img/01.jpg" alt="" />
+						</div>
+						
+
+					</div>
+
+					
+
+
+					
+
+				</div>
+			</section>
+
+		
+	</main>
+	
 
 	
 

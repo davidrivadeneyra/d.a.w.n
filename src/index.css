@@ -40,6 +40,10 @@
         background-size: cover;
     }
 
+    .section-gradiente-top {
+        background: linear-gradient(0deg, rgba(11, 4, 22, 0.00) 0%, #450D19 54%, #73141C 100%);
+    }
+
     .main-background {
         position: relative;
         padding-bottom: 128px;
@@ -48,6 +52,11 @@
     .title-font {
         font-family: "Anton SC";
         font-weight: 400;
+    }
+
+    .paragraph-font-medium {
+        font-family: "Rubik";
+        font-weight: 600;
     }
 
     .title-color {
@@ -86,9 +95,9 @@
     .title-h2 {
         @apply title-font text-[40px] md:text-[105px] leading-[95%] title-color
     }
-s
+
     .title-h3 {
-        @apply title-font text-[21px] md:text-[95px] leading-[95%] title-color
+        @apply title-font text-[21px] md:text-[47px] leading-[95%] title-color
     }
 
     .title-h4 {
