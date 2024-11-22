@@ -34,7 +34,7 @@ function App() {
 							<input className='bg-transparent text-xs lg:text-sm w-full without-ring leading-none text-stone-200' type="email" placeholder="zombie@mail.com" />
 						</div>
 						<div className="form-group">
-							<button type="submit" className="btn">Join the Fight!</button>
+							<button type="submit" className="btn ">Join the Fight!</button>
 						</div>	
 					</form>
 
@@ -324,9 +324,9 @@ function App() {
 					<div>
 						<p className='paragraph-color text-center pt-32 pb-4'>© 2024 Half Byte Games LLC. All Rights Reserved.</p>
 						<div className='flex gap-8 justify-center paragraph-yellow-500'>
-							<a href="/">X</a>
-							<a href="/">Discord</a>
-							<a href="/">YouTube</a>
+							<a href="/" className='transition ease-in-out delay-150 hover:scale-110 hover:color-[#F6FF89] duration-300' >X</a>
+							<a href="/" className='transition ease-in-out delay-150 hover:scale-110 hover:color-[#F6FF89] duration-300' >Discord</a>
+							<a href="/" className='transition ease-in-out delay-150 hover:scale-110 hover:color-[#F6FF89] duration-300' >YouTube</a>
 						</div>
 					</div>
 				</section>
