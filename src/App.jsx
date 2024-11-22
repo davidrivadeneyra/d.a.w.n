@@ -16,15 +16,15 @@ function App() {
 				</video>
 			</div>
 			</div>
-      	<main className="main main-background">
+	<main className="main main-background">
 		  	<header className='h-28 flex justify-center items-center w-full'>
 				<a href="#" className='flex justify-center items-center'>
 					<img className='inline-block h-[22px]' src="/brand/logo.svg" alt="Logo D.A.W.N" />
 				</a>
 			</header>
-			<section className="main-inner-section">
+			<section className="main-inner-section pb-32">
 				<div className='lg:w-[530px] '>
-					<h1 className="title-h1 title-color pb-3 lg:pb-8 pt-24"><span className='title-h2 block '>Survive the</span>  Darkness</h1>
+					<h1 className="title-h1 title-color pb-3 lg:pb-8 pt-44"><span className='title-h2 block '>Survive the</span>  Darkness</h1>
 					<p className="paragraph-primary paragraph-color pb-8">D.A.W.N: Darkness Awaits Withstand the Night is a fast-paced survival game where players face off against a relentless, evolving threat of zombies and reanimated former teammates in an open-ended simulation.</p>
 					<h2 className='title-h4 title-color pb-4'>Be the First to Know!</h2>
 
@@ -51,7 +51,7 @@ function App() {
 
 		
 	</main>
-	<main className="main-background">
+	<div className="main-background">
 		<div className='w-full section-gradiente-top'>
 			<section className="main-inner-section pb-40">
 					<h1 className="title-h2 title-color pt-24 pb-20 text-center">Roadmap</h1>
@@ -215,7 +215,7 @@ function App() {
 			
 		</div>
 		{/* PATH 4 */}
-		<div className='w-full section-gradiente-bottom'>
+		<div className='w-full'>
 				<section className="main-inner-section pb-40">
 					<div className=''>
 						<h3 className='title-h4 paragraph-orange-500 pb-2'>Stage 4:</h3>
@@ -256,8 +256,85 @@ function App() {
 						</div>
 					</div>
 				</section>
+		</div>
+		{/* PATH 5 */}
+		<div className='w-full section-gradiente-bottom'>
+				<section className="main-inner-section pb-40">
+					<div className=''>
+						<h3 className='title-h4 paragraph-orange-500 pb-2'>Stage 5:</h3>
+						
+						<h2 className='title-h3 title-color pb-8 md:pb-16'>Endgame Awakening</h2>
+						
+						<div className='path-section flex flex-col-reverse  md:flex-col gap-8 md:gap-16'>
+							<div className='path-list flex flex-col gap-10 md:grid md:grid-cols-3'>
+								<div className='path-item'>
+									<span className='uppercase paragraph-orange-500 paragraph-medium pb-2'>Patch 5.0</span>
+									<h3 className='title-h4 title-color pb-4'>Evolved Beyond Death</h3>
+									<span className='paragraph-medium title-color block'>Release Date: May 23, 2025</span>
+									<p className="paragraph-primary paragraph-color ">Final evolution forms for zombies, with max-level Alphas and Juggernauts.</p>
+								</div>
+								<div className='path-item'>
+									<span className='uppercase paragraph-orange-500 paragraph-medium pb-2'>Patch 5.1</span>
+									<h3 className='title-h4 title-color pb-4'>Nuclear Dawn</h3>
+									<span className='paragraph-medium title-color block'>Release Date: June 6, 2025</span>
+									<p className="paragraph-primary paragraph-color ">Nuke activation system and extraction mechanics for players to escape.</p>
+								</div>
+								<div className='path-item'>
+									<span className='uppercase paragraph-orange-500 paragraph-medium pb-2'>Patch 5.2</span>
+									<h3 className='title-h4 title-color pb-4'>The Final Test</h3>
+									<span className='paragraph-medium title-color block'>Release Date: June 20, 2025</span>
+									<p className="paragraph-primary paragraph-color ">Endgame balancing, where players face the toughest evolved zombies.</p>
+								</div>
+							</div>
+							<div className='path-image col-span-9 relative visible'>
+								<img src="/assets/img/05.jpg"  className='aspect-ratio-img absolute blur-2xl top-0 w-full z-0' alt="" />
+								<img src="/assets/img/05.jpg" className='aspect-ratio-img relative rounded-3xl' alt="" />
+							</div>
+						</div>
+					</div>
+				</section>
+		</div>
+		{/* LAST CTA */}
+		<footer className="main footer-image ">
+			<div className='main py-40'>
+				<section className="main-inner-section">
+					<div className=''>
+						<h1 className="title-h1 title-color pb-3 lg:pb-8 pt-24"><span className='title-h2 block'>Get D.A.W.N </span>on Steam</h1>
+						<h2 className='title-h4 title-color pb-4'>Get early access now!</h2>
+
+						<form className='flex flex-col lg:flex-row gap-4 mb-4'>
+							<div className="relative h-12 lg:h-14 w-full md:w-64 rounded-lg bg-white/[0.08] hover:bg-white/[0.1] border border-white/10  flex flex-col px-4 py-2 gap-1 cursor-pointer">
+								<label className='text-[#EDF67D] left-4 top-[10px] text-xs lg:text-sm leading-none'>Your email*</label>
+								<input className='bg-transparent text-xs lg:text-sm w-full without-ring leading-none text-stone-200' type="email" placeholder="zombie@mail.com" />
+							</div>
+							<div className="form-group">
+								<button type="submit" className="btn">Join the Fight!</button>
+							</div>	
+						</form>
+
+						<div className="wishlist-info flex lg:flex gap-2 ">
+							<a href="#" className='flex gap-2 items-center'>
+								<img src="/brand/steam-logo.svg" alt="Steam icon" className="steam-icon"/>
+								<span className='button-font text-xs lg:text-sm  text-[#EDF67D]'>WISHLIST ON STEAM</span>
+							</a>
+								<span className='paragraph-secondary text-xs lg:text-sm'>Available: Apr 1, 2025</span>
+							</div>
+
+					</div>
+					<div>
+						<p className='paragraph-color text-center pt-32 pb-4'>© 2024 Half Byte Games LLC. All Rights Reserved.</p>
+						<div className='flex gap-8 justify-center paragraph-yellow-500'>
+							<a href="/">X</a>
+							<a href="/">Discord</a>
+							<a href="/">YouTube</a>
+						</div>
+					</div>
+				</section>
 			</div>
-	</main>
+			
+		</footer>
+
+	</div>
 	
 
 	
