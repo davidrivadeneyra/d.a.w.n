@@ -67,7 +67,7 @@ function App() {
 							
 						</div>
 						<div className='path-image'>
-							<img src="/src/assets/img/01.jpg" alt="" />
+							<img src="/src/assets/img/02.jpg" alt="" />
 						</div>
 						
 
