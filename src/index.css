@@ -54,6 +54,13 @@
         background: linear-gradient(180deg, rgba(11, 4, 22, 0.00) 0%, #450D19 54%, #73141C 100%);
     }
 
+    .section-image {
+        background-image: url('/assets/img/04.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
     .main-background {
         position: relative;
         padding-bottom: 128px;
