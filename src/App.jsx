@@ -27,18 +27,7 @@ function App() {
 				<div className='lg:w-[530px] '>
 					<h1 className="title-h1 title-color pb-3 lg:pb-8 pt-44"><span className='title-h2 block '>Survive the</span>  Darkness</h1>
 					<p className="paragraph-primary paragraph-color pb-8">D.A.W.N: Darkness Awaits Withstand the Night is a fast-paced survival game where players face off against a relentless, evolving threat of zombies and reanimated former teammates in an open-ended simulation.</p>
-					<NewsLetterForm></NewsLetterForm>
-					{/* <h2 className='title-h4 title-color pb-4'>Be the First to Know!</h2>
-
-					<form className='flex flex-col lg:flex-row gap-4 mb-4'>
-						<div className="relative h-12 lg:h-14 w-full md:w-64 rounded-lg bg-white/[0.08] hover:bg-white/[0.1] border border-white/10  flex flex-col px-4 py-2 gap-1 cursor-pointer">
-							<label className='text-[#EDF67D] left-4 top-[10px] text-xs lg:text-sm leading-none'>Your email*</label>
-							<input className='bg-transparent text-xs lg:text-sm w-full without-ring leading-none text-stone-200' type="email" placeholder="zombie@mail.com" />
-						</div>
-						<div className="form-group">
-							<button type="submit" className="btn ">Join the Fight!</button>
-						</div>	
-					</form> */}
+					<NewsLetterForm/>
 
 					<div className="wishlist-info flex lg:flex gap-2 ">
 						<a target='_black'  href="https://store.steampowered.com/agecheck/app/1938500/" className='flex gap-2 items-center'>
@@ -146,17 +135,7 @@ function App() {
 				<div className='lg:w-[530px] '>
 					<h1 className="title-h2 title-color pb-3 lg:pb-8 pt-24">Be the First to Know!</h1>
 
-					<h2 className='title-h4 title-color pb-4'>Get early access now!</h2>
-
-					<form className='flex flex-col lg:flex-row gap-4 mb-4'>
-						<div className="relative h-12 lg:h-14 w-full md:w-64 rounded-lg bg-white/[0.08] hover:bg-white/[0.1] border border-white/10  flex flex-col px-4 py-2 gap-1 cursor-pointer">
-							<label className='text-[#EDF67D] left-4 top-[10px] text-xs lg:text-sm leading-none'>Your email*</label>
-							<input className='bg-transparent text-xs lg:text-sm w-full without-ring leading-none text-stone-200' type="email" placeholder="zombie@mail.com" />
-						</div>
-						<div className="form-group">
-							<button type="submit" className="btn">Join the Fight!</button>
-						</div>	
-					</form>
+					<NewsLetterForm/>
 
 					<div className="wishlist-info flex lg:flex gap-2 ">
 						<a target='_black' href="https://store.steampowered.com/agecheck/app/1938500/" className='flex gap-2 items-center'>
@@ -302,17 +281,7 @@ function App() {
 				<section className="main-inner-section">
 					<div className=''>
 						<h1 className="title-h1 title-color pb-3 lg:pb-8 pt-24"><span className='title-h2 block'>Get D.A.W.N </span>on Steam</h1>
-						<h2 className='title-h4 title-color pb-4'>Get early access now!</h2>
-
-						<form className='flex flex-col lg:flex-row gap-4 mb-4'>
-							<div className="relative h-12 lg:h-14 w-full md:w-64 rounded-lg bg-white/[0.08] hover:bg-white/[0.1] border border-white/10  flex flex-col px-4 py-2 gap-1 cursor-pointer">
-								<label className='text-[#EDF67D] left-4 top-[10px] text-xs lg:text-sm leading-none'>Your email*</label>
-								<input className='bg-transparent text-xs lg:text-sm w-full without-ring leading-none text-stone-200' type="email" placeholder="zombie@mail.com" />
-							</div>
-							<div className="form-group">
-								<button type="submit" className="btn">Join the Fight!</button>
-							</div>	
-						</form>
+						<NewsLetterForm/>
 
 						<div className="wishlist-info flex lg:flex gap-2 ">
 							<a target='_black' href="https://store.steampowered.com/agecheck/app/1938500/" className='flex gap-2 items-center'>
