@@ -8,17 +8,24 @@ const NewsletterForm = ({ className = '' }) => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        
+    
+        // Verifica si el email es válido
         if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
             setStatus('error');
             setMessage("Please enter a valid email address");
             return;
         }
-
+    
         setStatus('loading');
-        
+    
         try {
-            const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:3000';
+            // Define la URL de la API desde las variables de entorno
+            const apiUrl = import.meta.env.VITE_API_URL || 'https://www.hbg-watchtower.net';
+    
+            // Log para confirmar la URL
+            console.log('API URL:', apiUrl);
+    
+            // Realiza la solicitud POST
             const response = await fetch(`${apiUrl}/api/newsletter/signup`, {
                 method: 'POST',
                 headers: {
@@ -26,9 +33,9 @@ const NewsletterForm = ({ className = '' }) => {
                 },
                 body: JSON.stringify({ email }),
             });
-
+    
             const data = await response.json();
-
+    
             if (response.ok) {
                 setStatus('success');
                 setMessage("Thanks for joining! Check your email for confirmation.");
