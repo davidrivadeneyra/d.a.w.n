@@ -52,7 +52,7 @@ const NewsletterForm = ({ className = '' }) => {
         <>
         
         <div>
-            {/* <h2 className='title-h4 title-color pb-4'>Be the First to Know!</h2> */}
+            <h2 className='title-h4 title-color pb-4'>Be the First to Know!</h2>
             <form onSubmit={handleSubmit} className='flex flex-col lg:flex-row gap-4 mb-4'>
                 <div className="relative h-12 lg:h-14 w-full md:w-64 rounded-lg bg-white/[0.08] hover:bg-white/[0.1] border border-white/10 flex flex-col px-4 py-2 gap-1 cursor-pointer">
                     <label className='text-[#EDF67D] left-4 top-[10px] text-xs lg:text-sm leading-none'>

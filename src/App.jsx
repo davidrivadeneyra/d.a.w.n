@@ -27,8 +27,8 @@ function App() {
 				<div className='lg:w-[530px] '>
 					<h1 className="title-h1 title-color pb-3 lg:pb-8 pt-44"><span className='title-h2 block '>Survive the</span>  Darkness</h1>
 					<p className="paragraph-primary paragraph-color pb-8">D.A.W.N: Darkness Awaits Withstand the Night is a fast-paced survival game where players face off against a relentless, evolving threat of zombies and reanimated former teammates in an open-ended simulation.</p>
-					{/* <NewsLetterForm></NewsLetterForm> */}
-					<h2 className='title-h4 title-color pb-4'>Be the First to Know!</h2>
+					<NewsLetterForm></NewsLetterForm>
+					{/* <h2 className='title-h4 title-color pb-4'>Be the First to Know!</h2>
 
 					<form className='flex flex-col lg:flex-row gap-4 mb-4'>
 						<div className="relative h-12 lg:h-14 w-full md:w-64 rounded-lg bg-white/[0.08] hover:bg-white/[0.1] border border-white/10  flex flex-col px-4 py-2 gap-1 cursor-pointer">
@@ -38,7 +38,7 @@ function App() {
 						<div className="form-group">
 							<button type="submit" className="btn ">Join the Fight!</button>
 						</div>	
-					</form>
+					</form> */}
 
 					<div className="wishlist-info flex lg:flex gap-2 ">
 						<a target='_black'  href="https://store.steampowered.com/agecheck/app/1938500/" className='flex gap-2 items-center'>
