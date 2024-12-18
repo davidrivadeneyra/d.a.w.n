@@ -18,9 +18,9 @@ function App() {
 			</div>
 			</div>
 	<main className="main main-background">
-		  	<header className='h-28 flex justify-center items-center w-full'>
+		  	<header className='h-20 flex justify-center items-center w-full'>
 				<a href="#" className='flex justify-center items-center'>
-					<img className='inline-block h-4 md:h-[22px]' src="/brand/logo.svg" alt="Logo D.A.W.N" />
+					<img className='inline-block h-6 md:h-[32px]' src="/brand/logo-light.svg" alt="Logo D.A.W.N" />
 				</a>
 			</header>
 			<section className="main-inner-section pb-32">
