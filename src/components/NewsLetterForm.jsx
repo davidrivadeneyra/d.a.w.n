@@ -20,7 +20,7 @@ const NewsletterForm = ({ className = '' }) => {
     
         try {
             // Define la URL de la API desde las variables de entorno
-            const apiUrl = import.meta.env.VITE_API_URL || 'https://www.hbg-watchtower.net';
+            const apiUrl = import.meta.env.VITE_API_URL || 'https://hbg-watchtower.net';
     
             // Log para confirmar la URL
             console.log('API URL:', apiUrl);
