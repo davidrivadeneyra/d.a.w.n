@@ -234,7 +234,7 @@ const NDADocument = () => {
                     import.meta.env.VITE_API_URL ||
                     "https://hbg-watchtower.net";
 
-                  const result = await fetch(url + "/confirmNDA", {
+                  const result = await fetch(url + "/api/testers/confirmNDA", {
                     method: "POST",
                     headers: {
                       "Content-Type": "application/json",
