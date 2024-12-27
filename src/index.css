@@ -16,7 +16,7 @@
         background-color: var(--dark-900); 
     }
 
-    p, input, label, span {
+    p, input, label, span, li {
         font-family: "Rubik";
         font-weight: 400;
     }
