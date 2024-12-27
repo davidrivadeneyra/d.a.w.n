@@ -1,17 +1,30 @@
 import { LoaderCircle } from "lucide-react";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useSearchParams } from "react-router";
 
 const NDADocument = () => {
   const [searchParams] = useSearchParams();
-  const fullName = searchParams.get("name") || "[NAME]";
-  const userEmail = searchParams.get("email") || "[EMAIL]";
-  const discordId = searchParams.get("discord");
-  const steamId = searchParams.get("steam");
+  const id = searchParams.get("id") || "[NAME]";
   const currentDate = new Date().toLocaleDateString();
+
+  const [fullName, setFullName] = useState("[NAME]");
+  const [userEmail, setUserEmail] = useState("[EMAIL]");
 
   const [loading, setLoading] = useState(false);
   const [apiMsg, setApiMsg] = useState();
+
+  useEffect(() => {
+    (async () => {
+      const url = import.meta.env.VITE_API_URL || "https://hbg-watchtower.net";
+      const result = await fetch(url + `/api/users/${id}`);
+
+      /** @type {{email: string, fullName: string}} */
+      const userData = await result.json();
+
+      setFullName(userData.fullName);
+      setUserEmail(userData.email);
+    })();
+  }, [id]);
 
   return (
     <div className="bg-white">
@@ -234,23 +247,14 @@ const NDADocument = () => {
                     import.meta.env.VITE_API_URL ||
                     "https://hbg-watchtower.net";
 
-                  const result = await fetch(url + "/api/testers/confirmNDA", {
-                    method: "POST",
-                    headers: {
-                      "Content-Type": "application/json",
-                    },
-                    body: JSON.stringify({
-                      email,
-                      discordId,
-                      steamId,
-                      fullName,
-                    }),
-                  });
+                  const result = await fetch(
+                    url + `/api/testers/confirmNDA/${id}`,
+                  );
 
                   setLoading(false);
 
                   if (result.ok) {
-                    setApiMsg("You are in 🎉🎊");
+                    setApiMsg("You are in 🎊");
                   } else {
                     setApiMsg("There's an error 😓");
                     setTimeout(() => {
