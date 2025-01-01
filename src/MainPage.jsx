@@ -21,7 +21,7 @@ function MainPage() {
            <div className="main-inner-section">
            <a href="#" className="flex justify-center items-center">
                 <img
-                  className="inline-block h-6 md:h-[32px]"
+                  className="inline-block h-8 md:h-10"
                   src="/brand/logo.svg"
                   alt="Logo DAWN"
                 />
@@ -51,7 +51,7 @@ function MainPage() {
               >Wishlist on Steam
               </a>
             </div>
-            <span className="paragraph-secondary text-xs lg:text-sm">
+            <span className="paragraph-secondary text-xs text-white/60">
             © DAWN {currentYear}
               </span>
           </div>

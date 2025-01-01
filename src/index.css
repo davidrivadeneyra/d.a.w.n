@@ -163,7 +163,7 @@
     }
 
     .title-h2 {
-        @apply title-font text-[48px] md:text-[105px] leading-[95%] uppercase
+        @apply title-font text-[72px] md:text-[105px] leading-[95%] uppercase
     }
 
     .title-h3 {
