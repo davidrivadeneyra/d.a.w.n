@@ -40,7 +40,7 @@
     }    
 
     .button-color {
-        background-color: var(--yello-500);
+        background-color: var(--red-500);
     }
 
     .main {
@@ -95,7 +95,7 @@
     }
 
     .paragraph-color {
-        color: var(--dark-500);
+        color: var(--dark-200);
     }
 
     .paragraph-orange-500 {

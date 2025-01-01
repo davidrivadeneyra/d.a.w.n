@@ -1,7 +1,6 @@
 import { useState } from "react";
-import NewsLetterForm from "./components/NewsLetterForm";
 
-function MainPage() {
+function Roadmap() {
   return (
     <>
       <div className="absolute vh-85 w-full overflow-hidden">
@@ -38,7 +37,6 @@ function MainPage() {
               evolving threat of zombies and reanimated former teammates in an
               open-ended simulation.
             </p>
-            <NewsLetterForm />
 
             <div className="wishlist-info flex lg:flex gap-2 ">
               <a
@@ -244,7 +242,7 @@ function MainPage() {
                   Be the First to Know!
                 </h1>
 
-                <NewsLetterForm />
+             
 
                 <div className="wishlist-info flex lg:flex gap-2 ">
                   <a
@@ -525,7 +523,7 @@ function MainPage() {
                 <h1 className="title-h1 title-color pb-3 lg:pb-8 pt-24">
                   <span className="title-h2 block">Get D.A.W.N </span>on Steam
                 </h1>
-                <NewsLetterForm />
+    
 
                 <div className="wishlist-info flex lg:flex gap-2 ">
                   <a
@@ -583,4 +581,4 @@ function MainPage() {
   );
 }
 
-export default MainPage;
+export default Roadmap;
