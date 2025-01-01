@@ -3,11 +3,14 @@
 @tailwind utilities;
 
 :root {
-    --dark-100: #FFFEF5;
-    --dark-500: #CBCAC8;
-    --dark-900: #0B0416;
-    --yello-500: #EDF67D;
-    --orange-200: #FFD3BD;
+    --dark-050: #FFFFFF;
+    --dark-100: #F4F4F4;
+    --dark-200: #CBC8C8;
+    --dark-800: #121212;
+    --dark-900: #0A0A0A;
+    --red-500: #D61233;
+    --red-600: #7E0116;
+    --green-500: #19F783;
     --orange-500: #FAA275;
   }
 
@@ -73,7 +76,7 @@
     }
 
     .title-font {
-        font-family: "Anton SC";
+        font-family: "Big Shoulders Display";
         font-weight: 400;
     }
 

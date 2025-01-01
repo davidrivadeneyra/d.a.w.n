@@ -22,8 +22,8 @@ function MainPage() {
           <a href="#" className="flex justify-center items-center">
             <img
               className="inline-block h-6 md:h-[32px]"
-              src="/brand/logo-light.svg"
-              alt="Logo D.A.W.N"
+              src="/brand/logo.svg"
+              alt="Logo DAWN"
             />
           </a>
         </header>

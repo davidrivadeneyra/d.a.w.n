@@ -1,7 +1,7 @@
 @font-face {
-    font-family: "Anton SC";
-    src: url('/fonts/headings.woff2') format("woff2");
-    font-weight: 400;
+    font-family: "Big Shoulders Display";
+    src: url('/fonts/bsd-800.woff2') format("woff2");
+    font-weight: 800;
     font-style: normal;
     font-display: swap;
 }

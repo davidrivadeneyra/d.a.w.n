@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-				'sans': ['Anton SC', 'system-ui'],
+				'sans': ['Big Shoulders Display', 'system-ui'],
         'descrip': ['Rubik', 'system-ui'],
 			}
     },
