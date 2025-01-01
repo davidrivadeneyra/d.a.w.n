@@ -44,10 +44,7 @@
     }
 
     .main {
-        /* background-image: url("/public/banner/red-radial.svg"); */
-        background: radial-gradient(108.67% 100% at 50% 0%, rgba(11, 4, 22, 0.00) 0%, #0B0416 79.03%, #1B0717 81.87%, #450D19 91.18%, #62121B 95.13%, #73141C 100%);
-        background-repeat: no-repeat;
-        background-size: cover;
+        height: 100vh;
     }
 
     .section-gradiente-top {
@@ -110,8 +107,6 @@
         color: var(--yello-500);
     } 
 
-    
-
     .button-font {
         font-family: "Rubik";
         font-weight: 500;
@@ -126,6 +121,40 @@
         aspect-ratio: 4/3;
         object-fit: cover;
     }
+
+    .video-container {
+        width: 100%;     
+        height: 100vh;  
+        position: absolute;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        overflow: hidden; 
+    }
+
+    .video-container video {
+        height: 100%;         
+        width: 100%;         
+        object-fit: cover;    
+      }
+
+      .video-container::before {
+        content: "";
+        position: absolute; 
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          to bottom, 
+          rgba(0, 0, 0, 0) 0%,   
+          rgba(0, 0, 0, 0.2) 50%,   
+          rgba(0, 0, 0, 0.5) 70%,
+          rgba(0, 0, 0, 0.6) 80%,
+          rgba(0, 0, 0, 1) 100% 
+        );
+        pointer-events: none; 
+      }
 }
   
 @layer components {
@@ -134,19 +163,41 @@
     }
 
     .title-h2 {
-        @apply title-font text-[48px] md:text-[105px] leading-[95%] 
+        @apply title-font text-[48px] md:text-[105px] leading-[95%] uppercase
     }
 
     .title-h3 {
-        @apply title-font text-[32px] md:text-[47px] leading-[95%] 
+        @apply title-font text-[32px] md:text-[47px] leading-[95%] uppercase
     }
 
     .title-h4 {
-        @apply title-font text-[21px] md:text-[27px] leading-[120%] 
+        @apply title-font text-[21px] md:text-[27px] leading-[120%] uppercase
     }
 
     .btn {
-        @apply inline-block justify-center content-center button-font button-color text-xs md:text-sm md:h-14 px-6 md:px-8 uppercase  h-12 lg:h-14 w-full md:w-64 rounded-lg transition ease-in-out delay-150 hover:scale-[1.05] hover:bg-[#F6FF89] duration-300
+        @apply 
+            text-center
+            text-white
+            inline-block 
+            justify-center 
+            content-center 
+            button-font 
+            text-xs md:text-sm md:h-14 px-6 md:px-8 
+            uppercase 
+            h-12 lg:h-14 
+            w-full md:w-auto 
+            rounded-lg 
+            transition ease-in-out delay-150 hover:scale-[1.05] duration-300
+    }
+
+    .btn-primary {
+        @apply button-color 
+    }
+    .btn-secondary {
+        @apply 
+            bg-white/5
+            border
+            border-white/10
     }
 
     .paragraph-primary {
