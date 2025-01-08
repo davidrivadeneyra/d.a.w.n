@@ -9,7 +9,7 @@ export default {
       fontFamily: {
 				'sans': ['Big Shoulders Display', 'system-ui'],
         'descrip': ['Rubik', 'system-ui'],
-			}
+			},
     },
   },
   plugins: [],

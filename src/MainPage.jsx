@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ButtonIcon from "./components/button-icon";
-import BlinkDot from "./components/blink-dot";
+import Footer from "./components/footer";
+import AnimatedButton from "./components/AnimatedButton";
 
 function MainPage() {
   const currentYear = new Date().getFullYear();
@@ -33,7 +34,7 @@ function MainPage() {
         
         <section className="main-inner-section pb-14 w-full">
           <div className="lg:w-[530px]">
-            <h1 className="title-h2 title-color pb-3 lg:pb-8 pt-44">
+            <h1 className="title-h2 title-color pb-3 lg:pb-8 pt-44 shadow-xl">
               <span className="title-h2 block ">Survive the</span> Darkness
             </h1>
             <p className="paragraph-primary paragraph-color pb-6">
@@ -77,23 +78,8 @@ function MainPage() {
 
             </div>
 
-            <footer className="flex justify-between">
-              <div className="flex gap-4">
-                
-                <a href="/roadmap" className="paragraph-secondary text-[0.625rem] text-white/60 
-              hover:text-white">
-                <span className="flex justify-center items-center gap-1 leading-none"><BlinkDot></BlinkDot> Roadmap</span>
-                
-                </a>
-                <a href="/privacy-policy" className="paragraph-secondary text-[0.625rem] text-white/60 
-              hover:text-white leading-none">Privacy Policy
-                </a>
-              </div>
-              
-              <span className="paragraph-secondary text-[0.625rem] text-white/60 leading-none">
-            ©DAWN {currentYear}
-              </span>
-            </footer>
+            <Footer></Footer>
+           
         </section>
       </main>
     </>
