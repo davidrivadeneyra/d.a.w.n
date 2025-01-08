@@ -7,6 +7,18 @@ const PathItem = ({
   dateStatus = "text",
   dateText = "Release Date: October 11, 2024"
 }) => {
+
+    const getDateStatusColor = () => {
+        switch (dateStatus) {
+          case "done":
+            return "text-green-500";
+          case "progress":
+            return "text-red-500";
+          default:
+            return "text-zinc-500"; // Color por defecto
+        }
+      };
+
   const renderDate = () => {
     switch (dateStatus) {
       case "done":
@@ -30,8 +42,8 @@ const PathItem = ({
   return (
     <div className="path-item">
       <h3 className="title-h4 title-color pb-2">{title}</h3>
-      <span className="inline text-zinc-500 paragraph-primary pb-2">
-        {patchInfo} <span className="date">{renderDate()}</span>
+      <span className={`inline paragraph-primary pb-2 ${getDateStatusColor()}`}>
+        {patchInfo} <span className="">{renderDate()}</span>
       </span>
       <p className="paragraph-primary paragraph-color">
         {description}
@@ -40,7 +52,6 @@ const PathItem = ({
   );
 };
 
-// Definición de la animación de los puntos
 const style = document.createElement('style');
 style.textContent = `
   @keyframes blink {
