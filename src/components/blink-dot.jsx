@@ -1,6 +1,6 @@
 import React from 'react';
 
-const BlinkingDot = ({ size = 'h-2 w-2', className = '' }) => {
+const BlinkingDot = ({ size = 'h-[0.625rem] w-[0.625rem]', className = '' }) => {
   return (
     <div 
       className={`

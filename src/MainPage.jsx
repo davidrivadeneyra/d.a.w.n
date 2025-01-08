@@ -82,15 +82,15 @@ function MainPage() {
                 
                 <a href="/roadmap" className="paragraph-secondary text-[0.625rem] text-white/60 
               hover:text-white">
-                <span className="flex justify-center items-center gap-1"><BlinkDot></BlinkDot> Roadmap</span>
+                <span className="flex justify-center items-center gap-1 leading-none"><BlinkDot></BlinkDot> Roadmap</span>
                 
                 </a>
                 <a href="/privacy-policy" className="paragraph-secondary text-[0.625rem] text-white/60 
-              hover:text-white ">Privacy Policy
+              hover:text-white leading-none">Privacy Policy
                 </a>
               </div>
               
-              <span className="paragraph-secondary text-[0.625rem] text-white/60">
+              <span className="paragraph-secondary text-[0.625rem] text-white/60 leading-none">
             ©DAWN {currentYear}
               </span>
             </footer>
