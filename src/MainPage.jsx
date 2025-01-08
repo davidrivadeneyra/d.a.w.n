@@ -39,7 +39,7 @@ function MainPage() {
               DAWN: Darkness Awaits Withstand the Night is a fast-paced
               survival game where players face off against a relentless,
               evolving threat of zombies and reanimated former teammates in an
-              open-ended simulation. <span className="button-font title-color">Available: Apr 1, 2025</span>
+              open-ended simulation. <span className="button-font title-color ">Available: Apr 1, 2025</span>
             </p>
             </div>
 
@@ -76,12 +76,18 @@ function MainPage() {
 
             </div>
 
-            <footer className="flex gap-3">
-              <a href="/privacy-policy" className="aragraph-secondary text-[0.625rem] text-white/80 
-             hover:text-white ">Privacy Policy
-              </a>
+            <footer className="flex justify-between">
+              <div className="flex gap-3">
+                <a href="/roadmap" className="aragraph-secondary text-[0.625rem] text-white/60 
+              hover:text-white ">Roadmap
+                </a>
+                <a href="/privacy-policy" className="aragraph-secondary text-[0.625rem] text-white/60 
+              hover:text-white ">Privacy Policy
+                </a>
+              </div>
+              
               <span className="paragraph-secondary text-[0.625rem] text-white/60">
-            © DAWN {currentYear}
+            ©DAWN {currentYear}
               </span>
             </footer>
         </section>
