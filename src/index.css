@@ -124,7 +124,7 @@
 
     .video-container {
         width: 100%;     
-        height: 100vh;  
+        height: 100dvh;  
         position: absolute;
         display: flex; 
         justify-content: center;
@@ -182,10 +182,22 @@
             justify-center 
             content-center 
             button-font 
-            text-xs md:text-sm md:h-14 px-6 md:px-8 
-            uppercase 
-            h-12 lg:h-14 
+            text-xs md:text-sm
+            uppercase
+            px-6 md:px-8 
+            h-12 md:h-14 
             w-full md:w-auto 
+            rounded-lg 
+            transition ease-in-out delay-150 hover:scale-[1.05] duration-300
+    }
+
+    .btn-icon {
+        @apply
+            flex
+            justify-center 
+            items-center 
+            h-12 md:h-14 
+            w-full md:w-14 
             rounded-lg 
             transition ease-in-out delay-150 hover:scale-[1.05] duration-300
     }
@@ -193,6 +205,7 @@
     .btn-primary {
         @apply button-color 
     }
+
     .btn-secondary {
         @apply 
             bg-white/5

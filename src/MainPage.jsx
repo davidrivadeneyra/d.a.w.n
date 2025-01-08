@@ -1,5 +1,5 @@
 import { useState } from "react";
-import NewsLetterForm from "./components/NewsLetterForm";
+import ButtonIcon from "./components/button-icon";
 
 function MainPage() {
   const currentYear = new Date().getFullYear();
@@ -19,7 +19,7 @@ function MainPage() {
       <main className="main main-background flex flex-col justify-between">
         <header className="h-20 flex justify-center items-center w-full">
            <div className="main-inner-section">
-           <a href="#" className="flex justify-center items-center">
+           <a href="/" className="flex justify-center items-center">
                 <img
                   className="inline-block h-8 md:h-10"
                   src="/brand/logo.svg"
@@ -31,7 +31,7 @@ function MainPage() {
         </header>
         
         <section className="main-inner-section pb-14 w-full">
-          <div className="lg:w-[530px] ">
+          <div className="lg:w-[530px]">
             <h1 className="title-h2 title-color pb-3 lg:pb-8 pt-44">
               <span className="title-h2 block ">Survive the</span> Darkness
             </h1>
@@ -41,20 +41,49 @@ function MainPage() {
               evolving threat of zombies and reanimated former teammates in an
               open-ended simulation. <span className="button-font title-color">Available: Apr 1, 2025</span>
             </p>
-
-
-            <div className="wishlist-info mb-8 flex flex-col md:flex-row gap-4">
-              <a href="/register" className="btn btn-primary"
-              >Pre-Register for Beta
-              </a>
-              <a href="https://store.steampowered.com/agecheck/app/1938500/" className="btn btn-secondary"
-              >Wishlist on Steam
-              </a>
             </div>
-            <span className="paragraph-secondary text-xs text-white/60">
+
+
+            <div className="wishlist-info mb-8 justify-between flex flex-col md:flex-row gap-4">
+              <div className="flex gap-4 flex-col md:flex-row">
+                <a href="/register" className="btn btn-primary"
+                >Pre-Register for Beta
+                </a>
+                <a href="https://store.steampowered.com/agecheck/app/1938500/" className="btn btn-secondary"
+                >Wishlist on Steam
+                </a>
+              </div>
+              
+
+              <div className="flex gap-4">
+                <ButtonIcon
+                  imgSrc="/brand/discord-logo.svg"
+                  imgAlt="Logo de Discord"
+                />
+                <ButtonIcon
+                  imgSrc="/brand/reddit-logo.svg"
+                  imgAlt="Logo de Discord"
+                />
+                <ButtonIcon
+                  imgSrc="/brand/x-logo.svg"
+                  imgAlt="Logo de Discord"
+                />
+                <ButtonIcon
+                  imgSrc="/brand/youtube-logo.svg"
+                  imgAlt="Logo de Discord"
+                />
+              </div>
+
+            </div>
+
+            <footer className="flex gap-3">
+              <a href="/privacy-policy" className="aragraph-secondary text-[0.625rem] text-white/80 
+             hover:text-white ">Privacy Policy
+              </a>
+              <span className="paragraph-secondary text-[0.625rem] text-white/60">
             © DAWN {currentYear}
               </span>
-          </div>
+            </footer>
         </section>
       </main>
     </>
