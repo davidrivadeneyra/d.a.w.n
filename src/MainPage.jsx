@@ -1,5 +1,6 @@
 import { useState } from "react";
 import ButtonIcon from "./components/button-icon";
+import BlinkDot from "./components/blink-dot";
 
 function MainPage() {
   const currentYear = new Date().getFullYear();
@@ -77,11 +78,14 @@ function MainPage() {
             </div>
 
             <footer className="flex justify-between">
-              <div className="flex gap-3">
-                <a href="/roadmap" className="aragraph-secondary text-[0.625rem] text-white/60 
-              hover:text-white ">Roadmap
+              <div className="flex gap-4">
+                
+                <a href="/roadmap" className="paragraph-secondary text-[0.625rem] text-white/60 
+              hover:text-white">
+                <span className="flex justify-center items-center gap-1"><BlinkDot></BlinkDot> Roadmap</span>
+                
                 </a>
-                <a href="/privacy-policy" className="aragraph-secondary text-[0.625rem] text-white/60 
+                <a href="/privacy-policy" className="paragraph-secondary text-[0.625rem] text-white/60 
               hover:text-white ">Privacy Policy
                 </a>
               </div>
